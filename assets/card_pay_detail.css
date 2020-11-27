@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Myriad Pro Black Italic";
+    src: url("fonts/Myriad Pro Black Italic/Myriad Pro Black Italic.otf");
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.roboto_font {
+    font-family: "Roboto", sans-serif;
+}
+.bold_text_400 {
+    font-weight: 400;
+}
+.bold_text_500 {
+    font-weight: 500;
+}
+#mainpage {
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #545f6e;
+}
+#cardContainer {
+    overflow-y: auto;
+    margin: 20px 0 20px 0;
+    width: 450px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.visa_font_text {
+    font-family: "Myriad Pro Black Italic";
+}
+#creditcard {
+    width: 76%;
+    height: 175px;
+    background: red;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #518cd0;
+    background-image: linear-gradient(315deg, #518cd0 0%, #81adde 74%);
+    box-shadow: 0 6px 8px 2px rgb(164 191 239 / 34%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    padding: 15px;
+    overflow: hidden;
+    transition: all 500ms;
+}
+#creditcard:hover {
+    transform: rotate(-3deg);
+}
+#visa_bottom_label {
+    color: #639adb;
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    font-size: 40px;
+}
+#visa_topright_label_container {
+    width: 100%;
+    background: transparent;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+#visa_topright_label_container label {
+    color: #fff;
+    font-size: 20px;
+}
+#cardAppbar {
+    width: 90%;
+    background: #1e88e5;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    padding: 5px 0 5px 0;
+    box-shadow: 0 1px #fff0, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+#cardAppbar label {
+    font-style: italic;
+    color: #fff;
+    font-size: 25px;
+}
+#cardChip {
+    border-radius: 4px;
+    width: 40px;
+    height: 30px;
+    background: #abcbf1;
+}
+#numMaskedContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3px 0 3px 0;
+}
+#numMaskedContainer label {
+    font-family: "Orbitron", sans-serif;
+    color: #fff;
+}
+#cardFormFields {
+    width: 90%;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    padding: 20px 25px 20px 25px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 14%), 0 2px 0 0 rgb(0 0 0 / 0.03);
+}
+.ctnh-5 {
+    height: 5px;
+}
+@media (max-width: 575.98px) {
+    #cardContainer {
+        margin: 0;
+        box-shadow: none;
+    }
+}
+.divider {
+    height: 0.9px;
+    background: whitesmoke;
+    margin: 7px 0 20px 0;
+}
+.label_tile {
+    font-size: 15px;
+    color: #0c4e96;
+}
+.description_tile {
+    font-size: 15px;
+    color: #505050;
+}
+.flex_container_expanded_children {
+    display: flex;
+}
+.flex_container_expanded_children div {
+    flex: 1;
+}
+#buttonsContainer {
+    width: 100%;
+    box-shadow: 0 -3px #fff0, 0 -1px 3px rgba(34, 25, 25, 0.4);
+}
+#buttonsContainer div {
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.labelButton {
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.alert_label {
+    padding: 3px 7px 3px 7px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.success_label {
+    background: #adf59b;
+    color: #368a22;
+}
+.danger_label {
+    color: #8a2222;
+    background: #f59b9b;
+}
+.full_width {
+    width: 100%;
+}
